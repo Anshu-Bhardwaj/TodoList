@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Settings"
+        android:id="@+id/permissionGrant"/>
+
+
+    <item android:id="@+id/sendFeedback"
+        android:title="Send Feedback"/>
+
+    <item android:id="@+id/aboutUs"
+        android:title="About Us"/>
+
+    <item android:title="Sort">
+
+        <menu>
+            <item android:title="By date" android:id="@+id/byDate"/>
+            <item android:title="By time" android:id="@+id/byTime"/>
+            <item android:title="By name" android:id="@+id/byName"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>
