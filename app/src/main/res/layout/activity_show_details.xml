@@ -8,6 +8,7 @@
 
 
     <TextView
+        android:id="@+id/yourTodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -21,104 +22,91 @@
         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="-75dp"
-        android:layout_marginTop="86dp"
+        android:layout_below="@id/yourTodo"
+        android:layout_marginTop="8dp"
         android:text="Title:"
         android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="30sp"
-        android:layout_marginRight="-75dp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/todoTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="149dp"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="8dp"
         android:text="titlevalue"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="30sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="30sp" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="215dp"
+        android:layout_below="@id/todoTitleTextView"
         android:textSize="20sp"
+        android:layout_marginTop="8dp"
         android:maxLines="10"
         android:text="Description:"
         android:textStyle="bold"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_alignParentLeft="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <TextView
-            android:id="@+id/todoDescriptionTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="255dp"
-            android:textSize="20sp"
-            android:maxLines="5"
-            android:text="descrvalue"
-            android:scrollbars = "vertical"
-            android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/todoDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:maxLines="5"
+        android:text="descrvalue"
+        android:scrollbars = "vertical"/>
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="177dp"
+        android:layout_below="@id/todoDescriptionTextView"
         android:text="Date of Todo: "
+        android:layout_marginTop="8dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_alignParentLeft="true" />
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/todoDateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="130dp"
+        android:layout_below="@id/textView3"
         android:text="No date Selected"
-        android:textSize="20sp"
-        android:layout_alignParentLeft="true" />
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"/>
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="77dp"
         android:text="Time of Todo: "
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="8dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_alignParentLeft="true" />
+        android:layout_below="@id/todoDateTextView"/>
 
     <TextView
         android:id="@+id/todoTimeTextView"
         android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="30dp"
+        android:layout_below="@id/textView6"
         android:text="No Time Selected"
-        android:textSize="20sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="20sp" />
+
 
 
 </RelativeLayout>
