@@ -22,7 +22,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemLongClickListener,
         AdapterView.OnItemClickListener {
@@ -106,12 +105,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int idMenu=item.getItemId();
-      if(idMenu==R.id.permissionGrant){
+      if(idMenu== R.id.permissionGrant){
             Intent intent=new Intent(this,SettingsActivity.class);
             startActivity(intent);
         }
 
-        else if(idMenu==R.id.sendFeedback){
+        else if(idMenu== R.id.sendFeedback){
             Intent intent= new Intent();
             intent.setAction(Intent.ACTION_SENDTO);
             Uri uri= Uri.parse("mailto:anshu.msit@gmail.com");
@@ -119,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             startActivity(intent);
         }
 
-        else if(idMenu==R.id.aboutUs){
+        else if(idMenu== R.id.aboutUs){
             Intent intent= new Intent();
             intent.setAction(Intent.ACTION_VIEW);
             Uri uri= Uri.parse("https://en.todoist.com/");
@@ -133,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             TodosOpenHelper openHelper = TodosOpenHelper.getInstance(getApplicationContext());
             SQLiteDatabase database = openHelper.getReadableDatabase();
 
-            if (idMenu == R.id.byName) {
+            if (idMenu ==R.id.byName) {
                 cursor = database.query(Contract.Todo.TABLE_NAME, null, null, null, null, null, Contract.Todo.COLUMN_NAME);
 
                 while (cursor.moveToNext()) {
@@ -174,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 cursor.close();
 
             }
-            else if (idMenu == R.id.byTime) {
+            else if (idMenu ==R.id.byTime) {
                 cursor = database.query(Contract.Todo.TABLE_NAME, null, null, null, null, null, Contract.Todo.COLUMN_TIME);
 
                 while (cursor.moveToNext()) {
