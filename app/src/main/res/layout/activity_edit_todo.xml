@@ -21,18 +21,6 @@
         android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/addExpense_DescriptionEditText"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="false" >
-
-
-    </RelativeLayout>
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
